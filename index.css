@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url("images/space.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#logo {
+    height: inherit;
+    width: inherit;
+    max-height: 50px;
+    max-width: 250px;
+}
+
+#search-btn {
+    background-image: url("images/loupe.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #ced4da;
+    margin-right: 0;
+    margin-bottom: 2%;
+}
+
+#search-btn:hover {
+    background-color: white;
+    border-color: #212529;
+}
+
+#search-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+    margin-bottom: 2%;
+}
+#search-text:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: 0 0 0 0rem #212529;
+}
+
+.navbar {
+    background-color: #1b1b1b;
+    padding-top: 0;
+    padding-bottom: 0%;
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+
+
+  
+.navbar>.container-fluid>.navbar-header, .navbar>.container-fluid>.navbar-header>.navbar-brand{
+    height: inherit;
+} 
+  
+.navbar>.container-fluid {
+    margin-left:  2%;
+    margin-right: 2%;
+    margin-top:  0%;
+    margin-bottom: 0%;
+    height: 100%;
+}
+  
+.navbar-brand>img {
+    height: 100%;
+    width: auto;
+}
+  
+.navbar.navbar-default {
+     height: 5vh;
+     min-height: 10px; 
+}
