@@ -1,5 +1,9 @@
-html {
-    height: 100%;
+html,body{ 
+    margin:0; 
+    padding:0; 
+    height:100%; 
+    width:100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -18,6 +22,20 @@ body {
     width: inherit;
     max-height: 50px;
     max-width: 250px;
+}
+
+#full-div{
+    height:100%;
+    width:100%;
+}
+
+#logo-centro {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
 }
 
 #search-btn {
