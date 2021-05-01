@@ -8,7 +8,7 @@ html,body{
 
 body {
     height: 100%;
-    background-image: url("images/space.png");
+    background-image: url("images/space1.png");
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -26,7 +26,6 @@ body {
 
 #full-div{
     height:100%;
-    width:100%;
 }
 
 #logo-centro {
@@ -105,4 +104,23 @@ body {
 .navbar.navbar-default {
      height: 5vh;
      min-height: 10px; 
+}
+
+#desc-prog {
+    font-size: 180%;
+    text-align: center;
+}
+
+#sate {
+    height: inherit;
+    width: inherit;
+    max-height: 280px;
+    max-width: 280px;
+}
+
+#desc-container {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
