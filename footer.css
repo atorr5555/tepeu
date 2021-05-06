@@ -1,0 +1,32 @@
+.logo {
+	max-height: 35px;
+}
+
+.logos-cont {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: auto;
+}
+
+.bot-sep {
+	border-top: 2px solid #1f1e1e;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.bot-sm {
+	display: none !important;
+}
+
+@media (max-width: 768px) {
+	.bot-sm {
+		display: flex !important;
+	}
+
+	.bot-big {
+		display: none !important;
+	}
+}
