@@ -173,6 +173,29 @@ nav {
     display: none;
 }
 
+.logo {
+	max-height: 35px;
+}
+
+.logos-cont {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: auto;
+}
+
+.bot-sep {
+	border-top: 2px solid #1f1e1e;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.bot-sm {
+	display: none !important;
+}
+
 @media (max-width: 992px) {
     .line-sep {
         display: none;
@@ -192,4 +215,14 @@ nav {
         border-top: 2px ridge #383434;
         margin: auto;
     }
+}
+
+@media (max-width: 768px) {
+	.bot-sm {
+		display: flex !important;
+	}
+
+	.bot-big {
+		display: none !important;
+	}
 }
