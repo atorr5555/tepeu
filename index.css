@@ -17,13 +17,6 @@ body {
     background-size: cover;
 }
 
-#logo {
-    height: inherit;
-    width: inherit;
-    max-height: 50px;
-    max-width: 250px;
-}
-
 #full-div{
     height:100%;
 }

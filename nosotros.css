@@ -1,0 +1,38 @@
+html,body{ 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
+}
+
+#content {
+	padding-top: max(70px, 13vh);
+	margin: auto;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+}
+
+h1 {
+	color: #102e5d;
+	font-weight: 600;
+}
+
+#acerca-desc {
+	width: 75%;
+	margin: auto;
+	font-weight: 300;
+}
+
+#titulo-inst {
+	font-weight: bold;
+	color: #102e5d;
+}
+
+.desc-cont {
+	margin-bottom: 3%;
+}
