@@ -36,3 +36,32 @@ h1 {
 .desc-cont {
 	margin-bottom: 3%;
 }
+
+.img-inst {
+	max-height: 85px;
+}
+
+.cent {
+	margin: auto;
+}
+
+.img-lid {
+	height: 250px;
+}
+
+.nombres {
+	text-align: center;
+}
+
+.margin-sepss {
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#lid-main-cont {
+	width: 100%;
+}
+
+#lid-main {
+	width: 80%;
+}
