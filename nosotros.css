@@ -37,6 +37,15 @@ h1 {
 	margin-bottom: 3%;
 }
 
+.desc-cont-bg {
+	margin-bottom: 3%;
+}
+
+
+.desc-cont-sm {
+	display: none !important;
+}
+
 .img-inst {
 	max-height: 85px;
 }
@@ -68,4 +77,15 @@ h4 {
 
 #lid-main {
 	width: 80%;
+}
+
+@media (max-width: 768px) {
+	.desc-cont-sm {
+		display: flex !important;
+		margin-bottom: 3%;
+	}
+
+	.desc-cont-bg {
+		display: none !important;
+	}
 }
