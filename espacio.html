@@ -9,10 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-	<link rel="stylesheet" type="text/css" media="screen" href="nosotros.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="espacio.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="nav.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
-	<script src="main.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
@@ -66,111 +65,17 @@
 	<div id="content">
 		<div class="d-flex flex-column justify-content-center desc-cont">
 			<div class="p-2">
-				<h1>Acerca de nosotros</h1>
-			</div>
-			<div class="p-2" id="acerca-desc">
-				<h3>
-					TEPEU es un proyecto espacial impulsado por las principales instituciones educativas en México que consideran
-					el
-					desarrollo de la tecnología espacial para su aplicación en áreas de investigación científica y tecnológica.
-					Consistirá de tres misiones: TEPEU-1, TEPEU-2 y TEPEU-3.
-				</h3>
+				<h1>Misiones</h1>
 			</div>
 		</div>
 
-		<div class="d-flex flex-column justify-content-center desc-cont-bg">
-			<div class="p-2">
-				<h3 id="titulo-inst">Instituciones participantes</h3>
-			</div>
-			<div class="p-2 cent">
-				<div class="d-flex flex-row justify-content-around">
-					<div class="p-2 img-cont"> <img src="images/ICAT_Logo2.jpg" class="img-inst"> </div>
-					<div class="p-2 img-cont"> <img src="images/unam-escudo.png" class="img-inst"> </div>
-					<div class="p-2 img-cont"> <img src="images/cda.jpg" class="img-inst"> </div>
-					<div class="p-2 img-cont"> <img src="images/1200px-Logo_Instituto_Politécnico_Nacional.png" class="img-inst"> </div>
-					<div class="p-2 img-cont"> <img src="images/5a2d2f9c29b2605bc4176f8068680252.jpg" class="img-inst"> </div>
-				</div>
-			</div>
-			<div class="p-2 cent">
-				<div class="d-flex flex-row justify-content-around">
-					<div class="p-2 img-cont"> <img src="images/univmad3.PNG" class="img-inst"> </div>
-					<div class="p-2 img-cont"> <img src="images/3-2016-07-21-EscudoUCMTransparenteBig.png" class="img-inst"> </div>
-					<div class="p-2 img-cont"> <img src="images/qt=q_95.png" class="img-inst"> </div>
-					<div class="p-2 img-cont"> <img src="images/ECOSUR.jpg" class="img-inst"> </div>
-					<div class="p-2 img-cont"> <img src="images/logoqro.PNG" class="img-inst"> </div>
-				</div>
-			</div>
+		<div class="misiones d-flex flex-row">
+			<div class="p-2 flex-fill nombre-mision activa" id="primera-mision"> <h4>TEPEU-1</h4> </div>
+			<div class="p-2 flex-fill nombre-mision inactiva" id="mision-intermedia"> <h4>TEPEU-2</h4> </div>
+			<div class="p-2 flex-fill nombre-mision inactiva" id="ultima-mision"> <h4>TEPEU-3</h4> </div>
 		</div>
 	</div>
-
-	<div class="d-flex flex-column justify-content-center desc-cont-sm">
-		<div class="p-2">
-			<h3 id="titulo-inst">Instituciones participantes</h3>
-		</div>
-		<div class="p-2 cent">
-			<div class="d-flex flex-row justify-content-around">
-				<div class="p-2 img-cont"> <img src="images/ICAT_Logo2.jpg" class="img-inst"> </div>
-				<div class="p-2 img-cont"> <img src="images/unam-escudo.png" class="img-inst"> </div>
-				<div class="p-2 img-cont"> <img src="images/cda.jpg" class="img-inst"> </div>
-			</div>
-		</div>
-		<div class="p-2 cent">
-			<div class="d-flex flex-row justify-content-around">
-				<div class="p-2 img-cont"> <img src="images/1200px-Logo_Instituto_Politécnico_Nacional.png" class="img-inst"> </div>
-				<div class="p-2 img-cont"> <img src="images/5a2d2f9c29b2605bc4176f8068680252.jpg" class="img-inst"> </div>
-				<div class="p-2 img-cont"> <img src="images/univmad3.PNG" class="img-inst"> </div>
-			</div>
-		</div>
-		<div class="p-2 cent">
-			<div class="d-flex flex-row justify-content-around">
-				<div class="p-2 img-cont"> <img src="images/3-2016-07-21-EscudoUCMTransparenteBig.png" class="img-inst"> </div>
-				<div class="p-2 img-cont"> <img src="images/qt=q_95.png" class="img-inst"> </div>
-				<div class="p-2 img-cont"> <img src="images/ECOSUR.jpg" class="img-inst"> </div>
-			</div>
-		</div>
-		<div class="p-2 cent">
-			<div class="d-flex flex-row justify-content-around">
-				<div class="p-2 img-cont"> <img src="images/logoqro.PNG" class="img-inst"> </div>
-			</div>
-		</div>
-	</div>
-</div>
-
-	<div class="d-flex flex-column cent" id="lid-main-cont">
-		<div class="p-2">
-			<h3 id="titulo-inst">Líderes del proyecto</h3>
-		</div>
-		<div class="p-2 cent" id="lid-main">
-			<div class="d-flex flex-sm-row flex-column justify-content-around">
-				<div class="p-2 nombres margin-sep">
-					<div class="d-flex flex-column">
-						<div class="p-2">
-							<img src="images/rafael_prieto.jpg" class="img-lid">
-						</div>
-						<div class="p-2">
-							<h4>Rafael Prieto Meléndez</h4>
-						</div>
-						<div class="p-2">
-							<h4>	ICAT - UNAM</h4>
-						</div>
-					</div>
-				</div>
-				<div class="p-2 nombres margin-sep">
-					<div class="d-flex flex-column">
-						<div class="p-2">
-							<img src="images/1-1.jpg" class="img-lid">
-						</div>
-						<div class="p-2">
-							<h4>Mario Alberto Mendoza Bárcenas</h4>
-						</div>
-						<div class="p-2">
-							<h4>CDA - IPN</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<hr class="bot-sep">
 
@@ -210,6 +115,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
 		integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
 		crossorigin="anonymous"></script>
+	<script src="espacio.js"></script>
 </body>
 
 </html>

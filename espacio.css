@@ -1,0 +1,57 @@
+html,body{ 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
+}
+
+#content {
+	padding-top: max(70px, 13vh);
+	margin: auto;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+}
+
+h1 {
+	color: #102e5d;
+	font-weight: 600;
+}
+
+.nombre-mision {
+	text-align: center;
+	border: 1px ridge #102e5d;
+}
+
+.nombre-mision h4 {
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: bold;
+}
+
+#primera-mision {
+	border-left: 0;
+}
+
+#ultima-mision {
+	border-right: 0;
+}
+
+.nombre-mision a {
+    text-decoration: none !important;
+	color: inherit;
+}
+
+.activa {
+	color: white;
+	background: #4670ae;
+}
+
+.inactiva {
+	color: #102e5d;
+	background: white;
+}
