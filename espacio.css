@@ -25,6 +25,7 @@ h1 {
 .nombre-mision {
 	text-align: center;
 	border: 1px ridge #102e5d;
+	cursor: pointer;
 }
 
 .nombre-mision h4 {
