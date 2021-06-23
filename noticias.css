@@ -13,11 +13,11 @@ html,body{
 	margin: auto;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	text-align: center;
 }
 
-h1 {
+h2 {
 	color: #102e5d;
 	font-weight: 600;
 }
@@ -55,4 +55,42 @@ h1 {
     top: 40%;
     right: -25px;
     display: block !important;
+}
+
+.anuncio-contenedor {
+    border: 1px rgb(156, 146, 146) ridge;
+    width: 70%;
+    margin: auto;
+    box-shadow: 1px 1px 1px #888888;
+    height: 10em;
+    padding: 0 !important;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.imagen-anuncio {
+    width: 25%;
+    height: 9rem;
+}
+
+.desc-anuncio {
+    width: 50%;
+}
+
+.link-anuncio {
+    margin: auto;
+    align-self: center;
+}
+
+.boton-anuncios{
+    margin: auto;
+    align-items: center;
+}
+
+.boton-anuncios button{
+    margin: auto;
+}
+
+.btn-primary {
+    background-color: #102e5d;
 }
