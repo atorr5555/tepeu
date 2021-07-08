@@ -40,9 +40,8 @@ h2 {
 
 .owl-prev {
     width: 15px;
-    height: 100px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     margin-left: -20px !important;
     display: block !important;
 
@@ -50,9 +49,8 @@ h2 {
 
 .owl-next {
     width: 15px;
-    height: 100px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: -25px;
     display: block !important;
 }
@@ -93,4 +91,9 @@ h2 {
 
 .btn-primary {
     background-color: #102e5d;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: 0 0 !important;
+    color: inherit !important;
 }
