@@ -5,15 +5,13 @@ btn1.onclick = function selectMission() {
 	var m2 = document.getElementById("tepeu-2");
 	var m3 = document.getElementById("tepeu-3");
 	
-	m2.classList.add("invisible");
-	m2.classList.remove("mostrar");
-	m2.classList.remove("d-flex");
-	m1.classList.add("mostrar");
-	m1.classList.remove("invisible");
-	m1.classList.add("d-flex");
-	m3.classList.add("invisible");
-	m3.classList.remove("mostrar");
-	m3.classList.remove("d-flex");
+	esconde(m3);
+	esconde(m2);
+	muestra(m1);
+
+	activa(btn1);
+	inactiva(btn2);
+	inactiva(btn3);
 }
 
 var btn2 = document.getElementById("mision-intermedia");
@@ -23,15 +21,13 @@ btn2.onclick = function selectMission() {
 	var m2 = document.getElementById("tepeu-2");
 	var m3 = document.getElementById("tepeu-3");
 	
-	m1.classList.add("invisible");
-	m1.classList.remove("mostrar");
-	m1.classList.remove("d-flex");
-	m2.classList.add("mostrar");
-	m2.classList.remove("invisible");
-	m2.classList.add("d-flex");
-	m3.classList.add("invisible");
-	m3.classList.remove("mostrar");
-	m3.classList.remove("d-flex");
+	esconde(m1);
+	esconde(m3);
+	muestra(m2);
+
+	activa(btn2);
+	inactiva(btn1);
+	inactiva(btn3);
 }
 
 var btn3 = document.getElementById("ultima-mision");
@@ -41,13 +37,33 @@ btn3.onclick = function selectMission() {
 	var m2 = document.getElementById("tepeu-2");
 	var m3 = document.getElementById("tepeu-3");
 	
-	m1.classList.add("invisible");
-	m1.classList.remove("mostrar");
-	m1.classList.remove("d-flex");
-	m3.classList.add("mostrar");
-	m3.classList.remove("invisible");
-	m3.classList.add("d-flex");
-	m2.classList.add("invisible");
-	m2.classList.remove("mostrar");
-	m2.classList.remove("d-flex");
+	esconde(m1);
+	esconde(m2);
+	muestra(m3);
+
+	activa(btn3);
+	inactiva(btn2);
+	inactiva(btn1);
+}
+
+function esconde(elem) {
+	elem.classList.add("invisible");
+	elem.classList.remove("mostrar");
+	elem.classList.remove("d-flex");
+}
+
+function muestra(elem) {
+	elem.classList.add("mostrar");
+	elem.classList.remove("invisible");
+	elem.classList.add("d-flex");
+}
+
+function activa(elem) {
+	elem.classList.add("activa");
+	elem.classList.remove("inactiva");
+}
+
+function inactiva(elem) {
+	elem.classList.add("inactiva");
+	elem.classList.remove("activa");
 }
