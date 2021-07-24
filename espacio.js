@@ -1,10 +1,11 @@
 var btn1 = document.getElementById("primera-mision");
+var btn2 = document.getElementById("mision-intermedia");
+var btn3 = document.getElementById("ultima-mision");
+var m1 = document.getElementById("tepeu-1");
+var m2 = document.getElementById("tepeu-2");
+var m3 = document.getElementById("tepeu-3");
 
 btn1.onclick = function selectMission() {
-	var m1 = document.getElementById("tepeu-1");
-	var m2 = document.getElementById("tepeu-2");
-	var m3 = document.getElementById("tepeu-3");
-	
 	esconde(m3);
 	esconde(m2);
 	muestra(m1);
@@ -14,13 +15,7 @@ btn1.onclick = function selectMission() {
 	inactiva(btn3);
 }
 
-var btn2 = document.getElementById("mision-intermedia");
-
 btn2.onclick = function selectMission() {
-	var m1 = document.getElementById("tepeu-1");
-	var m2 = document.getElementById("tepeu-2");
-	var m3 = document.getElementById("tepeu-3");
-	
 	esconde(m1);
 	esconde(m3);
 	muestra(m2);
@@ -30,13 +25,7 @@ btn2.onclick = function selectMission() {
 	inactiva(btn3);
 }
 
-var btn3 = document.getElementById("ultima-mision");
-
 btn3.onclick = function selectMission() {
-	var m1 = document.getElementById("tepeu-1");
-	var m2 = document.getElementById("tepeu-2");
-	var m3 = document.getElementById("tepeu-3");
-	
 	esconde(m1);
 	esconde(m2);
 	muestra(m3);
