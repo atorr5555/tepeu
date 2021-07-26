@@ -15,87 +15,114 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  	<script src="load.js"></script>
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="load.js"></script>
 </head>
 
 <body>
-	<div id="nav-placeholder"></div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo-tepeu1-sinfondo.png" id="logo"></img>
+			</a>
+			<button class="btn bd-sidebar-toggle d-md-none collapsed" type="button" data-bs-toggle="collapse"
+				data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+				aria-label="Toggle docs navigation">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor"
+					viewBox="0 0 16 16">
+					<title>Expand</title>
+					<path fill-rule="evenodd"
+						d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z" />
+				</svg>
 
-	<nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
-		<div class="container-xxl d-flex align-items-md-center">
-		  <form class="bd-search position-relative me-auto">
-			<input type="search" class="form-control" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.0">
-		  </form>
-	  
-		  <div class="dropdown ms-3">
-		<button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-		  <span class="d-none d-lg-inline">Bootstrap</span> v5.0
-		</button>
-		<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
-		  <li><a class="dropdown-item current" aria-current="true" href="/docs/5.0/">Latest (5.0.x)</a></li>
-		  <li><hr class="dropdown-divider"></li>
-		  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
-		  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
-		  <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
-		  <li><hr class="dropdown-divider"></li>
-		  <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
-		</ul>
-	  </div>
-	  
-	  
-		  <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
-		<title>Expand</title>
-		<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"/>
-	  </svg>
-	  
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
-		<title>Collapse</title>
-		<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"/>
-	  </svg>
-	  
-		  </button>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse"
+					fill="currentColor" viewBox="0 0 16 16">
+					<title>Collapse</title>
+					<path fill-rule="evenodd"
+						d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z" />
+				</svg>
+			</button>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<!--<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#">ICON</a>
+				</li>-->
+					<li class="nav-item">
+						<a class="nav-link" href="nosotros.html">Nosotros</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="espacio.html">Espacio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="tierra.html">Tierra</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="validacion.html">Validación</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="productos.html">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="noticias.html">Noticias</a>
+					</li>
+				</ul>
+				<form class="d-flex flex-row">
+					<input class="form-control" type="search" id="search-text" placeholder="Buscar"
+						aria-label="Buscar" />
+					<button class="btn btn-outline-dark" id="search-btn" type="submit">
+
+					</button>
+				</form>
+
+			</div>
 		</div>
-	  </nav>
+	</nav>
 
 	<div class="container-xxl my-md-4 bd-layout">
 		<aside class="bd-sidebar">
 			<nav class="collapse bd-links" id="bd-docs-nav">
 				<ul class="list-unstyled mb-0 py-3 pt-md-1">
 					<li class="mb-1">
-						<button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#nasa" aria-expanded="true" aria-current="true">
-						  Vuelos con NASA
+						<button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse"
+							data-bs-target="#nasa" aria-expanded="true" aria-current="true">
+							Vuelos con NASA
 						</button>
-				
+
 						<div class="collapse show" id="nasa">
-						  	<ul class="list-unstyled fw-normal pb-1 small">
-							  	<li><label class="d-inline-flex align-items-center rounded active" aria-current="page">EMIDSS 1</label></li>
-							  	<li><label class="d-inline-flex align-items-center rounded">EMIDSS 2</label></li>
+							<ul class="list-unstyled fw-normal pb-1 small">
+								<li id="emidss-1btn"><label class="d-inline-flex align-items-center rounded active" id="emidss-1lb">EMIDSS 1</label></li>
+								<li id="emidss-2btn"><label class="d-inline-flex align-items-center rounded" id="emidss-2lb">EMIDSS 2</label></li>
 							</ul>
 						</div>
 					</li>
 					<li class="mb-1">
-						<button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#mexico" aria-expanded="true" aria-current="true">
-						  Vuelos en México
+						<button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse"
+							data-bs-target="#mexico" aria-expanded="true" aria-current="true">
+							Vuelos en México
 						</button>
-				
+
 						<div class="collapse show" id="mexico">
-						  	<ul class="list-unstyled fw-normal pb-1 small">
-							  	<li><label class="d-inline-flex align-items-center rounded">CSM 2016</label></li>
-							  	<li><label class="d-inline-flex align-items-center rounded">CSM 2018</label></li>
+							<ul class="list-unstyled fw-normal pb-1 small">
+								<li><label class="d-inline-flex align-items-center rounded">CSM 2016</label></li>
+								<li><label class="d-inline-flex align-items-center rounded">CSM 2018</label></li>
 							</ul>
 						</div>
 					</li>
 					<li class="mb-1">
-						<button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#baja-altitud" aria-expanded="true" aria-current="true">
-						  Experimentos de baja altitud
+						<button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse"
+							data-bs-target="#baja-altitud" aria-expanded="true" aria-current="true">
+							Experimentos de baja altitud
 						</button>
-				
+
 						<div class="collapse show" id="baja-altitud">
-						  	<ul class="list-unstyled fw-normal pb-1 small">
-							  	<li><label class="d-inline-flex align-items-center rounded">PEGASUS 1</label></li>
-							  	<li><label class="d-inline-flex align-items-center rounded">PEGASUS 2</label></li>
+							<ul class="list-unstyled fw-normal pb-1 small">
+								<li><label class="d-inline-flex align-items-center rounded">PEGASUS 1</label></li>
+								<li><label class="d-inline-flex align-items-center rounded">PEGASUS 2</label></li>
 								<li><label class="d-inline-flex align-items-center rounded">PEGASUS 3</label></li>
 								<li><label class="d-inline-flex align-items-center rounded">PEGASUS 4</label></li>
 								<li><label class="d-inline-flex align-items-center rounded">PEGASUS 5</label></li>
@@ -106,8 +133,97 @@
 			</nav>
 		</aside>
 		<main class="bd-main order-1">
-			  <h2>EMIDSS 1</h2>
-		
+			<div id="emidss-1">
+				<h2>EMIDSS 1</h2>
+				<h5>
+					El módulo experimental EMIDSS-1, cuyo nombre corresponde al acrónimo en inglés de Experimental
+					Module for Iterative Design for Satellite Subsystems versión 1, es una plataforma de desarrollo
+					tecnológico
+					diseñada por la colaboración entre el Instituto de Ciencias Aplicadas y Tecnología de la UNAM y el
+					Centro de
+					Desarrollo Aeroespacial del IPN, y tiene como principal objetivo servir como plataforma para el
+					desarrollo y pruebas a nivel componente y sistema, para el diseño de subsistemas satelitales y de
+					instrumentación
+					para cargas útiles científicas para misiones espaciales
+				</h5>
+				<img src="images/emids_logo.PNG" width="300">
+				<h5>
+					EMIDSS-1 es un módulo experimental orientado a la validación de esquemas de prueba operacionales a
+					nivel componente y sistema en ambiente de espacio cercano.
+				</h5>
+				<h3>Objetivos</h3>
+				<ul>
+					<li>
+						<h5>
+							Validación de un sistema de adquisición de datos basado en un microcontrolador comercial de
+							32 bits, con múltiples interfaces analógicas y digitales, memoria SD a bordo, diseñado bajo
+							el estándar PC-104
+						</h5>
+					</li>
+					<li>
+						<h5>
+							Validación del firmware multitarea para operación de instrumentación espacial
+						</h5>
+					</li>
+					<li>
+						<h5>
+							Validación y evaluación de sensores comerciales para la integración de un payload científico
+						</h5>
+					</li>
+					<li>
+						<h5>
+							Realización de un experimento de reconstrucción de la actitud de la plataforma a partir de
+							los datos de navegación inercial y GPS a bordo
+						</h5>
+					</li>
+				</ul>
+
+				<img src="images/191024-aca1-f1-estratosfera-modulo.jpg" height="300">
+
+				<h5>
+					En Septiembre del 2019 fue realizado un exitoso vuelo que tuvo una duración de casi cinco horas, fue
+					lanzado a la estratosfera desde la base del programa CSBF (Columbia Scientific Ballon Facility) de
+					la NASA, ubicada en Fort Sumner, Nuevo México, Estados Unidos. El viaje en globo sometió a los
+					equipos a condiciones de espacio cercano, que son similares a las que tendrán a alturas mayores
+					cuando estén en órbita
+				</h5>
+
+				<img src="images/descarga-45-768x509.jpeg" height="300">
+			</div>
+
+			<div id="emidss-2" class="invisible">
+
+			</div>
+
+			<div id="csm2016" class="invisible">
+
+			</div>
+
+			<div id="csm2018" class="invisible">
+
+			</div>
+
+			<div id="pegasus1" class="invisible">
+
+			</div>
+
+			<div id="pegasus2" class="invisible">
+
+			</div>
+
+			<div id="pegasus3" class="invisible">
+
+			</div>
+
+			<div id="pegasus4" class="invisible">
+
+			</div>
+
+			<div id="pegasus5" class="invisible">
+
+			</div>
+
+
 		</main>
 	</div>
 
