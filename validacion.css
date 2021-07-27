@@ -240,3 +240,21 @@ h2, h3 {
   	margin-left: auto;
   	margin-right: auto;
 }
+
+.imagen-pegasus {
+	height: auto;
+	max-width: 350px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+@media (min-width: 992px) {
+	.imagen-pegasus {
+		height: auto;
+		max-width: 500px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
