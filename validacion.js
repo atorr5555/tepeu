@@ -6,7 +6,6 @@ var btn_pegasus1 = document.getElementById("pegasus1btn")
 var btn_pegasus2 = document.getElementById("pegasus2btn")
 var btn_pegasus3 = document.getElementById("pegasus3btn")
 var btn_pegasus4 = document.getElementById("pegasus4btn")
-var btn_pegasus5 = document.getElementById("pegasus5btn")
 
 var emidss1 = document.getElementById("emidss-1")
 var emidss2 = document.getElementById("emidss-2")
@@ -16,7 +15,6 @@ var pegasus1 = document.getElementById("pegasus1")
 var pegasus2 = document.getElementById("pegasus2")
 var pegasus3 = document.getElementById("pegasus3")
 var pegasus4 = document.getElementById("pegasus4")
-var pegasus5 = document.getElementById("pegasus5")
 
 var emidss1lb = document.getElementById("emidss-1lb")
 var emidss2lb = document.getElementById("emidss-2lb")
@@ -26,7 +24,6 @@ var pegasus1lb = document.getElementById("pegasus1lb")
 var pegasus2lb = document.getElementById("pegasus2lb")
 var pegasus3lb = document.getElementById("pegasus3lb")
 var pegasus4lb = document.getElementById("pegasus4lb")
-var pegasus5lb = document.getElementById("pegasus5lb")
 
 btn_emidss1.onclick = function() {
 	esconde(emidss2)
@@ -37,7 +34,6 @@ btn_emidss1.onclick = function() {
 	esconde(pegasus2)
 	esconde(pegasus3)
 	esconde(pegasus4)
-	esconde(pegasus5)
 
 	activa(emidss1lb)
 	desactiva(emidss2lb)
@@ -47,7 +43,6 @@ btn_emidss1.onclick = function() {
 	desactiva(pegasus2lb)
 	desactiva(pegasus3lb)
 	desactiva(pegasus4lb)
-	desactiva(pegasus5lb)
 }
 
 btn_emidss2.onclick = function() {
@@ -59,7 +54,6 @@ btn_emidss2.onclick = function() {
 	esconde(pegasus2)
 	esconde(pegasus3)
 	esconde(pegasus4)
-	esconde(pegasus5)
 
 	activa(emidss2lb)
 	desactiva(emidss1lb)
@@ -69,7 +63,6 @@ btn_emidss2.onclick = function() {
 	desactiva(pegasus2lb)
 	desactiva(pegasus3lb)
 	desactiva(pegasus4lb)
-	desactiva(pegasus5lb)
 }
 
 btn_csm2016.onclick = function() {
@@ -81,7 +74,6 @@ btn_csm2016.onclick = function() {
 	esconde(pegasus2)
 	esconde(pegasus3)
 	esconde(pegasus4)
-	esconde(pegasus5)
 
 	desactiva(emidss2lb)
 	desactiva(emidss1lb)
@@ -91,7 +83,6 @@ btn_csm2016.onclick = function() {
 	desactiva(pegasus2lb)
 	desactiva(pegasus3lb)
 	desactiva(pegasus4lb)
-	desactiva(pegasus5lb)
 }
 
 btn_csm2018.onclick = function() {
@@ -103,7 +94,6 @@ btn_csm2018.onclick = function() {
 	esconde(pegasus2)
 	esconde(pegasus3)
 	esconde(pegasus4)
-	esconde(pegasus5)
 
 	desactiva(emidss2lb)
 	desactiva(emidss1lb)
@@ -113,7 +103,6 @@ btn_csm2018.onclick = function() {
 	desactiva(pegasus2lb)
 	desactiva(pegasus3lb)
 	desactiva(pegasus4lb)
-	desactiva(pegasus5lb)
 }
 
 btn_pegasus1.onclick = function() {
@@ -125,7 +114,6 @@ btn_pegasus1.onclick = function() {
 	esconde(pegasus2)
 	esconde(pegasus3)
 	esconde(pegasus4)
-	esconde(pegasus5)
 
 	desactiva(emidss2lb)
 	desactiva(emidss1lb)
@@ -135,7 +123,6 @@ btn_pegasus1.onclick = function() {
 	desactiva(pegasus2lb)
 	desactiva(pegasus3lb)
 	desactiva(pegasus4lb)
-	desactiva(pegasus5lb)
 }
 
 btn_pegasus2.onclick = function() {
@@ -147,7 +134,6 @@ btn_pegasus2.onclick = function() {
 	muestra(pegasus2)
 	esconde(pegasus3)
 	esconde(pegasus4)
-	esconde(pegasus5)
 
 	desactiva(emidss2lb)
 	desactiva(emidss1lb)
@@ -157,7 +143,6 @@ btn_pegasus2.onclick = function() {
 	activa(pegasus2lb)
 	desactiva(pegasus3lb)
 	desactiva(pegasus4lb)
-	desactiva(pegasus5lb)
 }
 
 btn_pegasus3.onclick = function() {
@@ -169,7 +154,6 @@ btn_pegasus3.onclick = function() {
 	esconde(pegasus2)
 	muestra(pegasus3)
 	esconde(pegasus4)
-	esconde(pegasus5)
 
 	desactiva(emidss2lb)
 	desactiva(emidss1lb)
@@ -179,7 +163,6 @@ btn_pegasus3.onclick = function() {
 	desactiva(pegasus2lb)
 	activa(pegasus3lb)
 	desactiva(pegasus4lb)
-	desactiva(pegasus5lb)
 }
 
 btn_pegasus4.onclick = function() {
@@ -191,7 +174,6 @@ btn_pegasus4.onclick = function() {
 	esconde(pegasus2)
 	esconde(pegasus3)
 	muestra(pegasus4)
-	esconde(pegasus5)
 
 	desactiva(emidss2lb)
 	desactiva(emidss1lb)
@@ -201,29 +183,6 @@ btn_pegasus4.onclick = function() {
 	desactiva(pegasus2lb)
 	desactiva(pegasus3lb)
 	activa(pegasus4lb)
-	desactiva(pegasus5lb)
-}
-
-btn_pegasus5.onclick = function() {
-	esconde(emidss1)
-	esconde(emidss2)
-	esconde(csm2016)
-	esconde(csm2018)
-	esconde(pegasus1)
-	esconde(pegasus2)
-	esconde(pegasus3)
-	esconde(pegasus4)
-	muestra(pegasus5)
-
-	desactiva(emidss2lb)
-	desactiva(emidss1lb)
-	desactiva(csm2016lb)
-	desactiva(csm2018lb)
-	desactiva(pegasus1lb)
-	desactiva(pegasus2lb)
-	desactiva(pegasus3lb)
-	desactiva(pegasus4lb)
-	activa(pegasus5lb)
 }
 
 function esconde(elem) {
