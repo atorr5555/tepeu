@@ -1,0 +1,79 @@
+html,body{ 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
+}
+
+#content {
+	padding-top: max(70px, 13vh);
+	margin: auto;
+	width: 90%;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	color: #102e5d;
+	font-weight: 600;
+}
+
+.btn-mas {
+    align-items: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.btn-mas button {
+    margin: auto;
+}
+
+.btn-primary {
+    background-color: #102e5d;
+}
+
+.card {
+	box-shadow: 1px 1px 1px #adadad;
+	width: 25%;
+}
+
+.container {
+	margin-bottom: 5%;
+}
+
+.card-prensa {
+	box-shadow: 1px 1px 1px #adadad;
+	width: 80%;
+	margin-bottom: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-mas-prensa {
+    align-items: center;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.card {
+		width: 90% !important;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+
+	.btn-mas {
+		align-items: center;
+		margin: auto;
+	}
+
+	.card-prensa {
+		width: 90% !important;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+}
