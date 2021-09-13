@@ -60,7 +60,7 @@ h2 {
     width: 70%;
     margin: auto;
     box-shadow: 1px 1px 1px #888888;
-    height: 10em;
+    height: 8em;
     padding: 0 !important;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -72,7 +72,7 @@ h2 {
 }
 
 .desc-anuncio {
-    width: 50%;
+    width: 90%;
 }
 
 .link-anuncio {
