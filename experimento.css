@@ -1,0 +1,28 @@
+html,body{ 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
+}
+
+#content {
+	padding-top: max(70px, 13vh);
+	margin: auto;
+    width: 70%;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	color: #102e5d;
+	font-weight: 600;
+}
+
+.p-2 {
+    text-align: center;
+}
