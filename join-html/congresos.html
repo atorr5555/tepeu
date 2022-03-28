@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="images/logo-tepeu1-sinfondo.png">
+  <title>TEPEU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <style>html,body{ 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
+}
+
+#content {
+	padding-top: max(70px, 13vh);
+	margin: auto;
+	width: 90%;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	color: #102e5d;
+	font-weight: 600;
+}
+
+.btn-mas {
+    align-items: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.btn-mas button {
+    margin: auto;
+}
+
+.btn-primary {
+    background-color: #102e5d;
+}
+
+.card {
+	box-shadow: 1px 1px 1px #adadad;
+	width: 25%;
+}
+
+.container {
+	margin-bottom: 5%;
+}
+
+.card-prensa {
+	box-shadow: 1px 1px 1px #adadad;
+	width: 80%;
+	margin-bottom: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-mas-prensa {
+    align-items: center;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.card {
+		width: 90% !important;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+
+	.btn-mas {
+		align-items: center;
+		margin: auto;
+	}
+
+	.card-prensa {
+		width: 90% !important;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+}</style>
+  <style>#search-btn {
+	background-image: url("images/loupe.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border: 1px solid #ced4da;
+	margin-right: 0;
+	margin-bottom: 2%;
+}
+
+#search-btn:hover {
+	background-color: white;
+	border-color: #212529;
+}
+
+#search-text {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: 0;
+	margin-bottom: 2%;
+}
+#search-text:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #ced4da;
+	outline: 0;
+	box-shadow: 0 0 0 0rem #212529;
+}
+
+#logo {
+	height: inherit;
+	width: inherit;
+	max-height: 50px;
+	max-width: 250px;
+}
+
+nav {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+
+.navbar {
+	background-color: #1b1b1b;
+	padding-top: 0;
+	padding-bottom: 0%;
+	padding-left: 0;
+	padding-right: 0;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0,0,0,1);
+}
+
+.navbar>.container-fluid>.navbar-header, .navbar>.container-fluid>.navbar-header>.navbar-brand{
+	height: inherit;
+} 
+
+.navbar>.container-fluid {
+	margin-left:  2%;
+	margin-right: 2%;
+	margin-top:  0%;
+	margin-bottom: 0%;
+	height: 100%;
+}
+
+.navbar-brand>img {
+	height: 100%;
+	width: auto;
+}
+
+.navbar.navbar-default {
+	 height: 5vh;
+	 min-height: 10px; 
+}
+</style>
+  <style>.logo {
+	max-height: 35px;
+}
+
+.logos-cont {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: auto;
+}
+
+.bot-sep {
+	border-top: 2px solid #1f1e1e;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.bot-sm {
+	display: none !important;
+}
+
+@media (max-width: 768px) {
+	.bot-sm {
+		display: flex !important;
+	}
+
+	.bot-big {
+		display: none !important;
+	}
+}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b88b87bbd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div id="content">
+    <div class="d-flex flex-column container">
+      <div class="p-2">
+        <h2>Conferencias y Congresos</h2>
+      </div>
+      <div class="p-2">
+        <div class="d-flex flex-column justify-content-around">
+          <div class="p-2">
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">SOMI XXXIV Congreso de Instrumentación (2019)</h6>
+                <h5 class="card-title"> TEPEU-1: Misión espacial mexicana con fines científicos y de validación
+                  tecnológica</h5>
+                <p class="card-text">Mario Alberto Mendoza-Bárcenas, Rafael Prieto-Meléndez, César Martínez-Fernández,
+                  Omar Álvarez-Cárdenas, Alfonso Tamez-Rodríguez, Javier Arellano-Verdejo, Itzel Cristal Canseco-Jiménez
+                </p>
+                <a href="congresos/7V_SOMI34_14.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Primer Congreso Nacional de Actividades Espaciales (2020)</h6>
+                <h5 class="card-title">Avances en el diseño de un módulo de carga útil compatible con el estándar
+                  Cubesat
+                  para estudios sobre la ionósfera terrestre</h5>
+                <p class="card-text">M.A. Mendoza-Bárcenas, R. Prieto-Meléndez, M. Sanjurjo-Rivo, JAL Cruz-Abeyro4, O.
+                  Álvarez-Cárdenas, M. Díaz-Quezada, A. Tamez-Rodríguez, A. Rodríguez-Rosales, I. Canseco-Jiménez</p>
+                <a href="congresos/C040_CONACES_2020.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Primer Congreso Nacional de Actividades Espaciales (2020)</h6>
+                <h5 class="card-title">Acceso a un Plan de Misiones Suborbitales como Herramienta para Validación de
+                  Experimentos Científicos y Desarrollos Tecnológicos</h5>
+                <p class="card-text">M.A. Mendoza-Bárcenas, M. Díaz-Quezada, M. Sanjurjo-Rivo, H. Franco, R.
+                  Prieto-Meléndez, O. Álvarez-Cárdenas, A. Tamez-Rodríguez, A. Rodríguez-Rosales, JAL Cruz-Abeyro</p>
+                <a href="congresos/C042_CONACES_2020.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Primer Congreso Nacional de Actividades Espaciales (2020)</h6>
+                <h5 class="card-title"> Diseño y Construcción de un Prototipo de Estructura Basada en el Estándar
+                  Cubesat para una Misión Espacial con Fines Científicos</h5>
+                <p class="card-text">José Andrés Guevara Rojas, Antonio Alfonso Rodríguez Rosales, Juan Antonio Murillo
+                  Vargas, Mario Alberto Mendoza Bárcenas, Rafael Prieto Meléndez y Cesar Augusto Sebastián Núñez</p>
+                <a href="congresos/CONACES-4.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Primer Congreso Nacional de Actividades Espaciales (2020)</h6>
+                <h5 class="card-title"> Diseño del sistema módulo de carga para nanosatélites tipo CubeSat de 1U con
+                  fines científicos</h5>
+                <p class="card-text">Juan Antonio Murillo Vargas, Antonio Alfonso Rodríguez Rosales, José Andrés Guevara
+                  Rojas, Mario Alberto Mendoza Bárcenas, Rafael Prieto Meléndez y Cesar Augusto Sebastián Núñez</p>
+                <a href="congresos/CONACES2020-2.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">SOMI XXXIV Congreso de Instrumentación (2019)</h6>
+                <h5 class="card-title">Prototipo de sistema magnetómetro para el módulo de carga de un CubeSat</h5>
+                <p class="card-text">Juan Antonio Murillo Vargas, José Andrés Guevara Rojas, Antonio Alfonso Rodríguez
+                  Rosales y Cesar Augusto Sebastián Núñez</p>
+                <a href="congresos/kD_SOMI34_20.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">17th International Conference on Electrical Engineering,
+                  Computing Science and Automatic Control (2020)</h6>
+                <h5 class="card-title">Preliminary Study of Space Weather Effects on the HF and VHF Communications at
+                  Low Latitudes during an Early Stage of the Solar Cycle 25</h5>
+                <p class="card-text">M.A. Mendoza-Barcenas, G. M. Galvan-Tejada, O. Alvarez-Cardenas, M. Herraiz,
+                  A.Tamez-Rodriguez</p>
+                <a href="congresos/PID6626255.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">SOMI XXXIV Congreso de Instrumentación (2019)</h6>
+                <h5 class="card-title">Plataforma de baja altitud para validación de tecnología aeroespacial “PEGASUS”
+                </h5>
+                <p class="card-text">Mario Alberto Mendoza-Bárcenas, Rafael Prieto-Meléndez, Juan Carlos Lara-López,
+                  Juan Alberto Tamayo-Serrano, Antonio Rodríguez-Rosales, Jorge Luis Barahona-Ávalos, Itzel Cristal
+                  Canseco-Jiménez</p>
+                <a href="congresos/sa_SOMI34_15.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">SOMI XXXII Congreso de Instrumentación (2017)</h6>
+                <h5 class="card-title"> Módulo experimental de carga útil “SADM-1” para fines de exploración atmosférica
+                </h5>
+                <p class="card-text">Mario Alberto Mendoza Bárcenas, Rafael Prieto Meléndez, Lauro Santiago Cruz,
+                  Frederic Trillaud, Alejandro Espinosa Calderón, Miguel Herraiz Sarachaga, Fernando Velázquez Villegas
+                </p>
+                <a href="congresos/SOMI_32_SADM.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+            <div class="p-2 card card-prensa">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">SOMI XXXII Congreso de Instrumentación (2017)</h6>
+                <h5 class="card-title">Simulación dinámica precisa y optimización de trayectoria de globos
+                  estratosféricos
+                </h5>
+                <p class="card-text">Mario Alberto Mendoza-Bárcenas, Rafael Prieto Meléndez, Lauro Santiago Cruz,
+                  Guillermo Manuel Asensio López, Manuel Sanjurjo-Rivo</p>
+                <a href="congresos/SOMI_32_SIM.pdf" class="card-link">Leer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer-placeholder"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>$.get("navbar.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+
+$.get("footer.html", function(data){
+    $("#footer-placeholder").replaceWith(data);
+});</script>
+</body>
+
+</html>

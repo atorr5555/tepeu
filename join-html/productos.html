@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="images/logo-tepeu1-sinfondo.png">
+  <title>TEPEU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <style>html,body{ 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
+}
+
+#content {
+	padding-top: max(70px, 13vh);
+	margin: auto;
+	width: 90%;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	color: #102e5d;
+	font-weight: 600;
+}
+
+.btn-mas {
+    align-items: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.btn-mas button {
+    margin: auto;
+}
+
+.btn-primary {
+    background-color: #102e5d;
+}
+
+.card {
+	box-shadow: 1px 1px 1px #adadad;
+	width: 30%;
+}
+
+.container {
+	margin-bottom: 5%;
+}
+
+.card-prensa {
+	box-shadow: 1px 1px 1px #adadad;
+	width: 40%;
+	margin-bottom: 5%;
+}
+
+.btn-mas-prensa {
+    align-items: center;
+	margin: auto;
+}
+
+.btn-mas-congresos {
+  align-items: center;
+margin: auto;
+}
+
+@media (max-width: 992px) {
+	.card {
+		width: 90% !important;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+
+	.btn-mas {
+		align-items: center;
+		margin: auto;
+	}
+
+	.card-prensa {
+		width: 90% !important;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+}</style>
+  <style>#search-btn {
+	background-image: url("images/loupe.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border: 1px solid #ced4da;
+	margin-right: 0;
+	margin-bottom: 2%;
+}
+
+#search-btn:hover {
+	background-color: white;
+	border-color: #212529;
+}
+
+#search-text {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: 0;
+	margin-bottom: 2%;
+}
+#search-text:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #ced4da;
+	outline: 0;
+	box-shadow: 0 0 0 0rem #212529;
+}
+
+#logo {
+	height: inherit;
+	width: inherit;
+	max-height: 50px;
+	max-width: 250px;
+}
+
+nav {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+
+.navbar {
+	background-color: #1b1b1b;
+	padding-top: 0;
+	padding-bottom: 0%;
+	padding-left: 0;
+	padding-right: 0;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0,0,0,1);
+}
+
+.navbar>.container-fluid>.navbar-header, .navbar>.container-fluid>.navbar-header>.navbar-brand{
+	height: inherit;
+} 
+
+.navbar>.container-fluid {
+	margin-left:  2%;
+	margin-right: 2%;
+	margin-top:  0%;
+	margin-bottom: 0%;
+	height: 100%;
+}
+
+.navbar-brand>img {
+	height: 100%;
+	width: auto;
+}
+
+.navbar.navbar-default {
+	 height: 5vh;
+	 min-height: 10px; 
+}
+</style>
+  <style>.logo {
+	max-height: 35px;
+}
+
+.logos-cont {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: auto;
+}
+
+.bot-sep {
+	border-top: 2px solid #1f1e1e;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.bot-sm {
+	display: none !important;
+}
+
+@media (max-width: 768px) {
+	.bot-sm {
+		display: flex !important;
+	}
+
+	.bot-big {
+		display: none !important;
+	}
+}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b88b87bbd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div id="content">
+    <div class="d-flex flex-column container">
+      <div class="p-2">
+        <h2>Conferencias y Congresos</h2>
+      </div>
+      <div class="p-2">
+        <div class="d-flex flex-column flex-lg-row justify-content-around">
+          <div class="p-2 card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">SOMI XXXIV Congreso de Instrumentación (2019)</h6>
+              <h5 class="card-title"> TEPEU-1: Misión espacial mexicana con fines científicos y de validación
+                tecnológica</h5>
+              <p class="card-text">Mario Alberto Mendoza-Bárcenas, Rafael Prieto-Meléndez, César Martínez-Fernández,
+                Omar Álvarez-Cárdenas, Alfonso Tamez-Rodríguez, Javier Arellano-Verdejo, Itzel Cristal Canseco-Jiménez
+              </p>
+              <a href="congresos/7V_SOMI34_14.pdf" class="card-link">Leer</a>
+            </div>
+          </div>
+          <div class="p-2 card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Primer Congreso Nacional de Actividades Espaciales (2020)</h6>
+              <h5 class="card-title">Avances en el diseño de un módulo de carga útil compatible con el estándar Cubesat
+                para estudios sobre la ionósfera terrestre</h5>
+              <p class="card-text">M.A. Mendoza-Bárcenas, R. Prieto-Meléndez, M. Sanjurjo-Rivo, JAL Cruz-Abeyro4, O.
+                Álvarez-Cárdenas, M. Díaz-Quezada, A. Tamez-Rodríguez, A. Rodríguez-Rosales, I. Canseco-Jiménez</p>
+              <a href="congresos/C040_CONACES_2020.pdf" class="card-link">Leer</a>
+            </div>
+          </div>
+          <div class="p-2 card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Primer Congreso Nacional de Actividades Espaciales (2020)</h6>
+              <h5 class="card-title">Acceso a un Plan de Misiones Suborbitales como Herramienta para Validación de
+                Experimentos Científicos y Desarrollos Tecnológicos</h5>
+              <p class="card-text">M.A. Mendoza-Bárcenas, M. Díaz-Quezada, M. Sanjurjo-Rivo, H. Franco, R.
+                Prieto-Meléndez, O. Álvarez-Cárdenas, A. Tamez-Rodríguez, A. Rodríguez-Rosales, JAL Cruz-Abeyro</p>
+              <a href="congresos/C042_CONACES_2020.pdf" class="card-link">Leer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 btn-mas-congresos">
+        <a href="congresos.html" class="btn btn-primary">Ver más</a>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column container">
+      <div class="p-2">
+        <h2>Artículos</h2>
+      </div>
+      <div class="p-2">
+        <div class="d-flex flex-column flex-lg-row justify-content-around">
+          <div class="p-2 card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Pistas Educativas 38(120). (2016)</h6>
+              <h5 class="card-title">Sistema de adquisición de datos y base de tiempo para futura sonda estratosférica
+                en misión espacial de órbita baja</h5>
+              <p class="card-text">Miguel Ángel Silva García, Alejandro Espinosa Calderón, José Alfredo Padilla Medina,
+                Mario Alberto Mendoza Bárcenas, Lauro Santiago Cruz, Rafael Prieto Meléndez</p>
+              <a href="articulos/Senie 2016_Sist de adq datos y base tiempo para futura sonda orbita baja.pdf"
+                class="card-link">Leer</a>
+            </div>
+          </div>
+          <div class="p-2 card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">The AMSAT Journal 43(4). (2020)</h6>
+              <h5 class="card-title"> Integration of a Distributed Ground Station Network Based on Amateur Radio
+                Infrastructure for Scientific Space Missions</h5>
+              <p class="card-text">M.A.Mendoza-Bárcenas, Rafael Prieto-Meléndez, Alejandro Padrón-Godínez, Gerardo
+                Calva-Olmos, Omar Álvarez-Cárdenas, Margarita G. Mayoral-Baldivia, Alfonso Tamez-Rodríguez</p>
+              <a href="articulos/The AMSAT Journal July-August 2020.pdf" class="card-link">Leer</a>
+            </div>
+          </div>
+          <!--<div class="p-2 btn-mas">
+						<button type="button" class="btn btn-primary">Ver más</button>
+					</div>-->
+        </div>
+      </div>
+    </div>
+
+<!----
+    <div class="d-flex flex-column container">
+      <div class="p-2">
+        <h2>Tesis</h2>
+      </div>
+      <div class="p-2">
+        <div class="d-flex flex-column flex-lg-row justify-content-around">
+          <div class="p-2 card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">2018</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Ramirez Peñaloza, Ana Leticia</h6>
+              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur, adipiscing elit</h5>
+              <a href="#" class="card-link">Leer</a>
+            </div>
+          </div>
+          <div class="p-2 card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">2018</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Ramirez Peñaloza, Ana Leticia</h6>
+              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur, adipiscing elit</h5>
+              <a href="#" class="card-link">Leer</a>
+            </div>
+          </div>
+          <div class="p-2 card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">2018</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Ramirez Peñaloza, Ana Leticia</h6>
+              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur, adipiscing elit</h5>
+              <a href="#" class="card-link">Leer</a>
+            </div>
+          </div>
+          <div class="p-2 btn-mas">
+            <button type="button" class="btn btn-primary">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+    <div class="d-flex flex-column container">
+      <div class="p-2">
+        <h2>Prensa</h2>
+      </div>
+      <div class="p-2">
+        <div class="d-flex flex-column justify-content-around">
+          <div class="p-2">
+            <div class="d-flex flex-column flex-lg-row justify-content-around">
+              <div class="p-2 card card-prensa">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">JUN 23, 2021</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">ARISTEGUI NOTICIAS</h6>
+                  <h5 class="card-title">Prueba la NASA tecnología de UNAM e IPN para la operación de
+                    satélites | Video</h5>
+                  <a href="https://aristeguinoticias.com/2306/mexico/prueba-la-nasa-tecnologia-de-unam-e-ipn-para-la-operacion-de-satelites-video/"
+                    class="card-link" target="_blank" rel="noopener noreferrer">Leer</a>
+                </div>
+              </div>
+              <div class="p-2 card card-prensa">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">JUN 22, 2021</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">EL UNIVERSAL</h6>
+                  <h5 class="card-title">Mexicanos al espacio: UNAM e IPN colaboran con la NASA en
+                    vuelo experimental</h5>
+                  <a href="https://www.eluniversal.com.mx/ciencia-y-salud/la-unam-y-el-ipn-viajan-con-la-nasa-al-espacio-exterior"
+                    class="card-link" target="_blank" rel="noopener noreferrer">Leer</a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-around">
+              <div class="p-2 card card-prensa">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">JUN 21, 2021</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">GACETA UNAM</h6>
+                  <h5 class="card-title">Proyecto de la UNAM a 36 kilómetros sobre el nivel del mar</h5>
+                  <a href="https://www.gaceta.unam.mx/nasa-prueba-desarrollo-satelital-de-la-unam-e-ipn/"
+                    class="card-link" target="_blank" rel="noopener noreferrer">Leer</a>
+                </div>
+              </div>
+              <div class="p-2 card card-prensa">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">JUN 21, 2021</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">DGCS UNAM</h6>
+                  <h5 class="card-title">Boletín UNAM-DGCS-527</h5>
+                  <a href="https://www.dgcs.unam.mx/boletin/bdboletin/2021_527.html" class="card-link" target="_blank"
+                    rel="noopener noreferrer">Leer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 btn-mas-prensa">
+            <a href="prensa.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer-placeholder"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>$.get("navbar.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+
+$.get("footer.html", function(data){
+    $("#footer-placeholder").replaceWith(data);
+});</script>
+</body>
+
+</html>

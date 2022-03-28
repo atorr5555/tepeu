@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" href="images/logo-tepeu1-sinfondo.png">
+	<title>TEPEU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+	<style>html,body{ 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
+}
+
+#content {
+	padding-top: max(70px, 13vh);
+	margin: auto;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+}
+
+h1 {
+	color: #102e5d;
+	font-weight: 600;
+}
+
+h2 {
+	color: #102e5d;
+	font-weight: bold;
+}
+
+.nombre-mision {
+	text-align: center;
+	border: 1px ridge #102e5d;
+	cursor: pointer;
+}
+
+.nombre-mision h4 {
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: bold;
+}
+
+#primera-mision {
+	border-left: 0;
+}
+
+#ultima-mision {
+	border-right: 0;
+}
+
+.nombre-mision a {
+    text-decoration: none !important;
+	color: inherit;
+}
+
+.activa {
+	color: white;
+	background: #4670ae;
+}
+
+.inactiva {
+	color: #102e5d;
+	background: white;
+}
+
+#desc-tepeu-1 {
+	text-align: center;
+}
+
+#desc-tepeu-1 h3{
+	font-weight: lighter;
+}
+
+#tepeu-1 {
+	width: 85%;
+	
+}
+
+#text-desc-tepeu-1 {
+	width: 85%;
+	
+}
+
+.sate {
+	height: 280px;
+}
+
+.cent {
+	margin: auto;
+	text-align: center;
+}
+
+.titulo-secc h2{
+	font-weight: normal;
+}
+
+h4 {
+	font-weight: lighter;
+}
+
+.invisible {
+	display: none;
+}</style>
+	<style>#search-btn {
+	background-image: url("images/loupe.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border: 1px solid #ced4da;
+	margin-right: 0;
+	margin-bottom: 2%;
+}
+
+#search-btn:hover {
+	background-color: white;
+	border-color: #212529;
+}
+
+#search-text {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: 0;
+	margin-bottom: 2%;
+}
+#search-text:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #ced4da;
+	outline: 0;
+	box-shadow: 0 0 0 0rem #212529;
+}
+
+#logo {
+	height: inherit;
+	width: inherit;
+	max-height: 50px;
+	max-width: 250px;
+}
+
+nav {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+
+.navbar {
+	background-color: #1b1b1b;
+	padding-top: 0;
+	padding-bottom: 0%;
+	padding-left: 0;
+	padding-right: 0;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0,0,0,1);
+}
+
+.navbar>.container-fluid>.navbar-header, .navbar>.container-fluid>.navbar-header>.navbar-brand{
+	height: inherit;
+} 
+
+.navbar>.container-fluid {
+	margin-left:  2%;
+	margin-right: 2%;
+	margin-top:  0%;
+	margin-bottom: 0%;
+	height: 100%;
+}
+
+.navbar-brand>img {
+	height: 100%;
+	width: auto;
+}
+
+.navbar.navbar-default {
+	 height: 5vh;
+	 min-height: 10px; 
+}
+</style>
+	<style>.logo {
+	max-height: 35px;
+}
+
+.logos-cont {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: auto;
+}
+
+.bot-sep {
+	border-top: 2px solid #1f1e1e;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.bot-sm {
+	display: none !important;
+}
+
+@media (max-width: 768px) {
+	.bot-sm {
+		display: flex !important;
+	}
+
+	.bot-big {
+		display: none !important;
+	}
+}</style>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  	<script>$.get("navbar.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+
+$.get("footer.html", function(data){
+    $("#footer-placeholder").replaceWith(data);
+});</script>
+</head>
+
+<body>
+	<div id="nav-placeholder"></div>
+
+	<div id="content">
+		<div class="d-flex flex-column justify-content-center desc-cont">
+			<div class="p-2">
+				<h1>Misiones</h1>
+			</div>
+		</div>
+
+		<!-- Seleccionar mision -->
+		<div class="misiones d-flex flex-row">
+			<div class="p-2 flex-fill nombre-mision activa" id="primera-mision">
+				<!--<a href="espacio.html"><h4>TEPEU-1</h4></a>-->
+				<h4>TEPEU-1</h4>
+			</div>
+			<div class="p-2 flex-fill nombre-mision inactiva" id="mision-intermedia">
+				<!--<a href="espacio-tepeu2.html"><h4>TEPEU-2</h4></a>-->
+				<h4>TEPEU-2</h4>
+			</div>
+			<div class="p-2 flex-fill nombre-mision inactiva" id="ultima-mision">
+				<!--<a href="espacio-tepeu3.html"><h4>TEPEU-3</h4></a>-->
+				<h4>TEPEU-3</h4>
+			</div>
+		</div>
+
+		<!-- TEPEU 1-->
+		<div class="d-flex flex-column cent mostrar" id="tepeu-1">
+			<div class="p-2">
+				<div class="d-flex flex-column cent" id="desc-tepeu-1">
+					<div class="p-2">
+						<h2>TEPEU-1</h2>
+					</div>
+					<div class="p-2 cent" id="text-desc-tepeu-1">
+						<h3>
+							La misión espacial TEPEU-1 considera dentro de sus objetivos científicos
+							fundamentales contribuir al conocimiento de la ionosfera sobre México. Para ello, se estima
+							que
+							el satélite tomará datos magnéticos y ionosféricos entre 450 y 650 km de altura orbital
+							sobre un
+							entorno de 500 km alrededor del punto de coordenadas 23.6345°N y 102.5528°W, siguiendo para
+							ello
+							una órbita heliosíncrona.
+						</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-2">
+				<div class="d-flex flex-column-reverse flex-lg-row" id="sat-tepeu-1">
+					<div class="p-2">
+						<img src="https://i.ibb.co/gzKTwgJ/sate-sf.png" class="sate">
+					</div>
+					<div class="p-2 cent">
+						<div class="d-flex flex-column cent">
+							<div class="p-2 titulo-secc cent">
+								<h2> Satélite tipo Cubesat </h2>
+							</div>
+							<div class="p-2">
+								<h4>
+									La misión busca integrar, a partir de elementos comerciales, un satélite pequeño
+									tipo Cubesat de 1 unidad, insertarlo en una órbita tipo LEO, con una altura orbital
+									entre los 450 a 650 km (dependiendo de las condiciones del lanzamiento), con fines
+									de investigación científica y demostración tecnológica
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-2">
+				<div class="d-flex flex-column flex-lg-row" id="iono-tepeu1">
+					<div class="p-2 cent">
+						<div class="d-flex flex-column cent">
+							<div class="p-2 titulo-secc cent">
+								<h2> Estudio de la ionosfera </h2>
+							</div>
+							<div class="p-2">
+								<h4>
+									Se busca implementar un experimento para el desarrollo de la instrumentación de un
+									módulo de carga útil orientado al estudio de la región intermedia de la ionosfera y
+									su afectación por eventos de clima espacial y otros fenómenos geofísicos, basado en
+									la evaluación operativa en órbita del magnetómetro comercial MAG3110. da la baja
+									latitud de la zona de estudio, será posible analizar la posible ocurrencia de
+									burbujas ionosféricas y su efecto en el posicionamiento satelital y las
+									comunicaciones.
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="p-2">
+						<img src="https://i.ibb.co/CHYmDDB/sate2-sf.png" class="sate">
+					</div>
+				</div>
+			</div>
+
+			<div class="p-2">
+				<div class="d-flex flex-column-reverse flex-lg-row" id="iono-tepeu-2">
+					<div class="p-2">
+						<img src="https://i.ibb.co/Sw8Hr3V/diag-ion.png"
+							class="sate">
+					</div>
+					<div class="p-2 cent">
+						<h4>
+							Los datos obtenidos permitirán la realización de estudios sobre la variación de densidad
+							electrónica en tiempos de máxima y mínima iluminación solar (mediodía y medianoche); el
+							comportamiento de la ionosfera en condiciones de calma y su respuesta a fenómenos solares
+							capaces de originar perturbaciones magnéticas o ionosféricas.
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex-column cent invisible" id="tepeu-2">
+		<div class="p-2"> <h2>Aún no hay información acerca de la misión 2</h2> </div>
+	</div>
+
+	<div class="flex-column cent invisible" id="tepeu-3">
+		<div class="p-2"> <h2>Aún no hay información acerca de la misión 3</h2> </div>
+	</div>
+
+	<div id="footer-placeholder"></div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+		integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+		integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+		crossorigin="anonymous"></script>
+	<script>var btn1 = document.getElementById("primera-mision");
+var btn2 = document.getElementById("mision-intermedia");
+var btn3 = document.getElementById("ultima-mision");
+var m1 = document.getElementById("tepeu-1");
+var m2 = document.getElementById("tepeu-2");
+var m3 = document.getElementById("tepeu-3");
+
+btn1.onclick = function selectMission() {
+	esconde(m3);
+	esconde(m2);
+	muestra(m1);
+
+	activa(btn1);
+	inactiva(btn2);
+	inactiva(btn3);
+}
+
+btn2.onclick = function selectMission() {
+	esconde(m1);
+	esconde(m3);
+	muestra(m2);
+
+	activa(btn2);
+	inactiva(btn1);
+	inactiva(btn3);
+}
+
+btn3.onclick = function selectMission() {
+	esconde(m1);
+	esconde(m2);
+	muestra(m3);
+
+	activa(btn3);
+	inactiva(btn2);
+	inactiva(btn1);
+}
+
+function esconde(elem) {
+	elem.classList.add("invisible");
+	elem.classList.remove("mostrar");
+	elem.classList.remove("d-flex");
+}
+
+function muestra(elem) {
+	elem.classList.add("mostrar");
+	elem.classList.remove("invisible");
+	elem.classList.add("d-flex");
+}
+
+function activa(elem) {
+	elem.classList.add("activa");
+	elem.classList.remove("inactiva");
+}
+
+function inactiva(elem) {
+	elem.classList.add("inactiva");
+	elem.classList.remove("activa");
+}</script>
+</body>
+
+</html>
